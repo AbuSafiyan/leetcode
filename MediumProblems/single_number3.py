@@ -11,4 +11,4 @@ def singleNumber3(nums):
 
 
 s = [2, 1, 2, 5, 1, 4]
-print(singleNumber3(s)
+print(singleNumber3(s))
