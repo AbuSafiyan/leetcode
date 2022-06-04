@@ -1,3 +1,6 @@
+"""leetcode question 136"""
+
+
 def singleNumber(nums):
     for num in nums:
         if not nums.count(num) > 1:
@@ -5,12 +8,12 @@ def singleNumber(nums):
 
 
 def singleNumberII(nums):
-    newnum = set(nums)
-    setsum = sum(newnum)
-    numssum = sum(nums)
-    lastsetsum = 2 * setsum
+    new_num = set(nums)
+    set_sum = sum(new_num)
+    nums_sum = sum(nums)
+    last_set_sum = 2 * set_sum
 
-    result = lastsetsum - numssum
+    result = last_set_sum - nums_sum
     return result
 
 
