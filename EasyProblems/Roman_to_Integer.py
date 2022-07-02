@@ -13,4 +13,5 @@ def romanToInt(s):
     return total
 
 
-a = 'V
+a = 'V'
+print(romanToInt(a))
