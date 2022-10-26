@@ -5,6 +5,6 @@ def findTheDifference(s, t):
             return i
 
 
-a = ""
-b = "y"
+a = "abu"
+b = "abcd"
 print(findTheDifference(a, b))
