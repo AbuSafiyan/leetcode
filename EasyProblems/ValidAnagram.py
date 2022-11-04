@@ -9,4 +9,4 @@ def isAnagram(s, t):
         return False
 
 
-print(isAnagram('heart', 'earth'))
+print(isAnagram('baccbbbdabcdbca', 'abc'))
