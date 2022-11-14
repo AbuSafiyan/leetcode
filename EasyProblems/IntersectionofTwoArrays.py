@@ -10,6 +10,6 @@ def intersection(nums1, nums2):
     return list(set(res))
 
 
-a = [4, 9, 5]
-b = [9, 4, 9, 8, 4]
+a = [1, 2, 2, 1]
+b = [2, 2]
 print(intersection(a, b))
