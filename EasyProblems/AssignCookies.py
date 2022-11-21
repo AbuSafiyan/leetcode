@@ -7,19 +7,21 @@
 # Your goal is to maximize the number of your content children and output the maximum number.
 
 def findContentChildren(g, s):
-    child = 0
-    cookie = 0
+    i = 0
+    j = 0
+    g_len = len(g)
+    s_len = len(s)
     g.sort()
     s.sort()
-    while child != len(g) and cookie != len(s):
-        if s[cookie] >= g[child]:
-            child += 1
-            cookie += 1
+    while i != g_len and j != s_len:
+        if s[j] >= g[i]:
+            i += 1
+            j += 1
         else:
-            cookie += 1
-    return child
+            j += 1
+    return i
 
 
-g = [1, 2, 3, 4]
+g = [1, 3, 2]
 s = [1, 2, 3]
 print(findContentChildren(g, s))
