@@ -8,4 +8,5 @@ def removeElement(nums, val):
 
 
 nums = [3, 2, 2, 3]
-print(removeElement(nums))
+val = 2
+print(removeElement(nums, val))
