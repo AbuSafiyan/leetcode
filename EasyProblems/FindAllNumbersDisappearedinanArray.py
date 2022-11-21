@@ -3,10 +3,12 @@
 
 
 def findDisappearedNumbers(nums):
-    num = len(nums)
-    su = sum(nums)
-    num1 = (num * (num + 1)) // 2 - su
-    return num1
+    num = set(nums)
+    new_nums = []
+    for i in range(1, len(nums) + 1):
+        if i not in num:
+            new_nums.append(i)
+    return new_nums
 
 
 a = [4, 3, 2, 7, 8, 2, 3, 1]
